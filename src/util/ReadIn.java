@@ -12,6 +12,11 @@ public class ReadIn {
     private static final int AsciiMin = 96;
     private static final int AsciiMax = 123;
 
+    /**
+     * Reads in the lines from the source file.
+     * @param fileName path to source file.
+     * @return List of all the words in rows, separated from each other.
+     */
     public static List<List<String>> getLines(String fileName) throws IOException
     {
         File file = new File(fileName);
@@ -34,6 +39,11 @@ public class ReadIn {
         return list;
     }
 
+    /**
+     * Filters out all the separators (including spaces).
+     * @param line one line from source file.
+     * @return List of separated words.
+     */
     private static List<String> filterNonChar(String line) {
         line = line.toLowerCase();
 
