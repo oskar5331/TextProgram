@@ -9,7 +9,7 @@ import java.util.List;
 public class WordFinder {
 
     public static final int MIN_COMMON_WORD_LENGTH = 8;
-    public static final String FILENAME = "C:/Users/oskar/Downloads/raamat.txt";
+    public static final String FILENAME = "./raamat.txt";
 
     public static TheLongestWord longestWord = new TheLongestWord();
     public static MostCommonWord commonWord = new MostCommonWord();

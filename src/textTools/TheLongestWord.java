@@ -8,7 +8,9 @@ public class TheLongestWord {
     int longestWordLength = 0;
 
     public Object[] returnLongestWords() {
-        return longestWords.toArray();
+        if (longestWords != null)
+            return longestWords.toArray();
+        return null;
     }
 
     public boolean checkWord(String word) {
